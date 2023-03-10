@@ -1,0 +1,16 @@
+Package: ChatGPT4R.CN
+Title: Access ChatGPT in R from mainland China
+Version: 0.0.1
+Authors@R: 
+    person("Yiming", "Sun", , "yiming.sun12138@gmail.com", role = c("aut", "cre"))
+Description: Access ChatGPT in R from mainland China.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports: 
+    base,
+    httr,
+    methods,
+    utils,
+    uuid
