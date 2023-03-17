@@ -3,7 +3,7 @@
 \docType{class}
 \name{chat_session-class}
 \alias{chat_session-class}
-\title{chat_session class is used for prompting messages to ChatGPT model and archiving chat history.}
+\title{chat_session class}
 \description{
 chat_session class is used for prompting messages to ChatGPT model and archiving chat history.
 }

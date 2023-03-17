@@ -2,12 +2,12 @@
 % Please edit documentation in R/Authentication.R
 \name{OpenAI_model_list}
 \alias{OpenAI_model_list}
-\title{Get OpenAI available model list.}
+\title{Get OpenAI available model list}
 \usage{
 OpenAI_model_list(simplify = TRUE)
 }
 \arguments{
-\item{simplify}{Whether simplify the list returned?}
+\item{simplify}{Whether simplify the model list returned by the function?}
 }
 \value{
 A character vector or a complex character list.

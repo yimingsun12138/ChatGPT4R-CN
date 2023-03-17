@@ -11,6 +11,28 @@ An object of class \code{character} of length 1.
 chat_func_char
 }
 \description{
-ChatGPT function written in string for dynamic parsing.
+The goal of OpenAI4R is to wrap the OpenAI API in R, allowing for simple and intuitive, even elegant calls.
+For the ChatGPT model used for interactive conversations, an intuitive way to use it is to initialize a function as a chat session and simply input text each time to complete the conversation.
+To make the conversation flow smoother, the conversation function should default to all other parameters, only requiring input for the conversation content.
+Therefore, it is necessary to dynamically initialize the chat session when there are multiple chat sessions in the current environment.
+}
+\details{
+Below is an introduction to the roles and functions of different parameters in the function-based chat session.
+
+\code{prompt_content} The conversation content that you input.
+
+\code{role} The identity used when issuing the instructions, can only be selected as 'user' or 'system'.
+
+\code{model} The AI model provided by OpenAI.
+
+\code{temperature},\code{top_p},\code{n},\code{max_tokens},\code{presence_penalty},\code{frequency_penalty} Refer to the parameter description from OpenAI.
+
+\code{stop_char} Up to 4 sequences where the API will stop generating further tokens. Input as a vector.
+
+\code{simplify} Whether to output the conversation directly or return the complete HTTP request content.
+
+\code{export_history} Whether export the chat history as text.
+
+\code{export_chat_session} Whether export the chat history as chat_session object.
 }
 \keyword{datasets}

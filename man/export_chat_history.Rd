@@ -2,7 +2,7 @@
 % Please edit documentation in R/chat_session_class.R
 \name{export_chat_history}
 \alias{export_chat_history}
-\title{Export chat_session archive as chat history.}
+\title{Export chat_session archive as chat history}
 \usage{
 export_chat_history(.Object)
 }

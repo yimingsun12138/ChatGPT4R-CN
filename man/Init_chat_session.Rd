@@ -2,7 +2,7 @@
 % Please edit documentation in R/chat_API.R
 \name{Init_chat_session}
 \alias{Init_chat_session}
-\title{Initialize a chat session for ChatGPT.}
+\title{Initialize a chat session for ChatGPT}
 \usage{
 Init_chat_session(
   global = NULL,
@@ -39,5 +39,11 @@ Init_chat_session(
 A function as a chat session.
 }
 \description{
-Initialize a chat session for ChatGPT.
+OpenAI4R is designed to implement chat sessions in the form of functions, so that users can achieve continuous conversations by simply entering text into the function.
+In order to provide multiple chat sessions in one environment, users need to initialize each chat session through this function.
+It should be noted that OpenAI limits the length of dialogues, and when this limit is exceeded, the conversation will start deleting from the beginning one by one to meet the length limit.
+Use \code{?chat_func_char} to get more information about chat sessions in function form.
+}
+\details{
+\code{stream}, \code{logit_bias} and \code{user} parameter are not supported currently.
 }

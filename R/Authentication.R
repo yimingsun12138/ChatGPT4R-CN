@@ -1,4 +1,7 @@
-#' Set up authentication using OpenAI API key.
+#' Set up authentication using OpenAI API key
+#' 
+#' @description Input the OpenAI API key and the account organization (optimal) to set up the authentication.
+#' Just ignore the `return_list` parameter, it is used to export the model list available from OpenAI.
 #' 
 #' @param key Your OpenAI API key.
 #' @param organization Usage from the API requests will count against the specified organization's subscription quota. Set to null as default.
@@ -38,11 +41,14 @@ Auth_OpenAI <- function(key,organization = NULL,return_list = FALSE){
   }
 }
 
-#' Get OpenAI available model list.
+#' Get OpenAI available model list
 #' 
-#' @param simplify Whether simplify the list returned?
+#' @description Get OpenAI available model list.
+#' 
+#' @param simplify Whether simplify the model list returned by the function?
 #' 
 #' @return A character vector or a complex character list.
+#' 
 #' @export
 OpenAI_model_list <- function(simplify = TRUE){
   

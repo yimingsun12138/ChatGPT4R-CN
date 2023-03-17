@@ -2,9 +2,12 @@
 % Please edit documentation in R/chat_API.R
 \name{generate_session_id}
 \alias{generate_session_id}
-\title{Generate chat_session id.}
+\title{Generate chat_session id}
 \usage{
 generate_session_id()
+}
+\value{
+Chat session id in character form.
 }
 \description{
 Generate chat_session id.

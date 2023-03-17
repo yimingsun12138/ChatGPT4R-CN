@@ -2,7 +2,7 @@
 % Please edit documentation in R/Authentication.R
 \name{Auth_OpenAI}
 \alias{Auth_OpenAI}
-\title{Set up authentication using OpenAI API key.}
+\title{Set up authentication using OpenAI API key}
 \usage{
 Auth_OpenAI(key, organization = NULL, return_list = FALSE)
 }
@@ -14,5 +14,6 @@ Auth_OpenAI(key, organization = NULL, return_list = FALSE)
 \item{return_list}{Whether return the OpenAI available model list?}
 }
 \description{
-Set up authentication using OpenAI API key.
+Input the OpenAI API key and the account organization (optimal) to set up the authentication.
+Just ignore the \code{return_list} parameter, it is used to export the model list available from OpenAI.
 }

@@ -3,7 +3,7 @@
 \docType{data}
 \name{URL_models}
 \alias{URL_models}
-\title{OpenAI all models URL.}
+\title{OpenAI all models URL}
 \format{
 An object of class \code{character} of length 1.
 }

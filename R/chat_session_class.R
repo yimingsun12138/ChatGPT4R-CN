@@ -1,7 +1,11 @@
-#' chat_session class is used for prompting messages to ChatGPT model and archiving chat history.
+#' chat_session class
+#' 
+#' @description chat_session class is used for prompting messages to ChatGPT model and archiving chat history.
 setClass(Class = 'chat_session',slots = c(session_id = 'character',history = 'list',archive = 'list'))
 
-#' Initialize chat_session class.
+#' Initialize chat_session class
+#' 
+#' @description Initialize chat_session class.
 setMethod(f = 'initialize',
           signature = methods::signature(.Object = 'chat_session'),
           definition = function(.Object,session_id = NULL,global = NULL){
@@ -20,7 +24,9 @@ setMethod(f = 'initialize',
             return(.Object)
           })
 
-#' Filter chat_session history if necessary.
+#' Filter chat_session history if necessary
+#' 
+#' @description Filter chat_session history if necessary.
 setGeneric(name = 'filter_chat_history',def = function(.Object,force){base::standardGeneric(f = 'filter_chat_history')})
 
 setMethod(f = 'filter_chat_history',
@@ -41,7 +47,9 @@ setMethod(f = 'filter_chat_history',
             return(.Object)
           })
 
-#' Add chat_session history.
+#' Add chat_session history
+#' 
+#' @description Add chat_session history.
 setGeneric(name = 'add_chat_history',def = function(.Object,role,prompt_content){base::standardGeneric(f = 'add_chat_history')})
 
 setMethod(f = 'add_chat_history',
@@ -64,7 +72,9 @@ setMethod(f = 'add_chat_history',
             return(.Object)
           })
 
-#' Export chat_session archive as chat history.
+#' Export chat_session archive as chat history
+#' 
+#' @description Export chat_session archive as chat history.
 setGeneric(name = 'export_chat_history',def = function(.Object){base::standardGeneric(f = 'export_chat_history')})
 
 setMethod(f = 'export_chat_history',

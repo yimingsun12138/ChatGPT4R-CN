@@ -1,6 +1,6 @@
 Package: ChatGPT4R.CN
 Title: Access ChatGPT in R from mainland China
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Yiming", "Sun", , "yiming.sun12138@gmail.com", role = c("aut", "cre"))
 Description: Access ChatGPT in R from mainland China.

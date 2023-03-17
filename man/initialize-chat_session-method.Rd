@@ -2,7 +2,7 @@
 % Please edit documentation in R/chat_session_class.R
 \name{initialize,chat_session-method}
 \alias{initialize,chat_session-method}
-\title{Initialize chat_session class.}
+\title{Initialize chat_session class}
 \usage{
 \S4method{initialize}{chat_session}(.Object, session_id = NULL, global = NULL)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/chat_session_class.R
 \name{filter_chat_history}
 \alias{filter_chat_history}
-\title{Filter chat_session history if necessary.}
+\title{Filter chat_session history if necessary}
 \usage{
 filter_chat_history(.Object, force)
 }
